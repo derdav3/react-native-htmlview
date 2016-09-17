@@ -323,16 +323,16 @@ var HTMLView = React.createClass({
       return true;
     }
 
-    if(nextProps.viewport.width !== this.props.viewport.width ||
-       nextProps.viewport.height !== this.props.viewport.height) {
-      console.log("*****this.props.width/height: " + this.props.viewport.width + "/" + this.props.viewport.height);
-      console.log("*****nextProps.width/height: " + nextProps.viewport.width + "/" + nextProps.viewport.height);
-      console.log("*****re-rendering everything");
+// if(nextProps.viewport.width !== this.props.viewport.width ||
+//    nextProps.viewport.height !== this.props.viewport.height) {
+//  console.log("*****this.props.width/height: " + this.props.viewport.width + "/" + this.props.viewport.height);
+//console.log("*****nextProps.width/height: " + nextProps.viewport.width + "/" + nextProps.viewport.height);
+//console.log("*****re-rendering everything");
 
-      this.previousCallWasUpdate = true;
-      this.startHtmlRender(nextProps.viewport);
-      return false;
-    }
+//      this.previousCallWasUpdate = true;
+//      this.startHtmlRender(nextProps.viewport);
+//      return false;
+//    }
 
     return false;
   },
